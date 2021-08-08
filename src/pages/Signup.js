@@ -20,7 +20,7 @@ const Signup = () => {
     name: "",
     skills: "",
     error: "",
-    empty: "",
+    empty: false,
   });
 
   const { email, userRole, password, confirmPassword, name, skills } =
@@ -31,7 +31,7 @@ const Signup = () => {
   };
 
   const validateEmail = (email) => {
-    var regEx = new RegExp("[a-z]+[0-9]*@gmail.com");
+    var regEx = new RegExp("[a-z]+@gmail.com");
     return regEx.test(email);
   };
 
@@ -49,6 +49,7 @@ const Signup = () => {
         })
         .catch((err) => console.log("Something went wrong!!"));
     }
+    setUserSignup({ ...userSignup, empty: true });
   };
 
   return (
@@ -94,18 +95,21 @@ const Signup = () => {
             type="text"
             placeholder="Enter your full name"
             onChange={hangleChange("name")}
-            border={name ? "1px solid red" : ""}
+            border={userSignup.empty ? "1px solid red" : ""}
           />
-          {name ? <SmallText small="The field is mandatory" /> : ""}
+          {userSignup.empty ? <SmallText small="The field is mandatory" /> : ""}
           <FormText text="Email Address*" />
           <Input
             type="email"
             placeholder="Enter your email"
             onChange={hangleChange("email")}
-            border={email || !validateEmail(email) ? "1px solid red" : ""}
+            border={
+              userSignup.empty || validateEmail(email) ? "1px solid red" : ""
+            }
           />
-          {email ? <SmallText small="The field is mandatory" /> : ""}
-          {!validateEmail(email) ? (
+          {userSignup.empty ? (
+            <SmallText small="The field is mandatory" />
+          ) : validateEmail(email) ? (
             <SmallText small="Invalid email address" />
           ) : (
             ""
@@ -118,7 +122,7 @@ const Signup = () => {
                 type="password"
                 placeholder="Enter your password"
                 onChange={hangleChange("password")}
-                border={password ? "1px solid red" : ""}
+                border={userSignup.empty ? "1px solid red" : ""}
               />
             </div>
             <div style={{ marginLeft: "21px" }} className="confirm_password">
@@ -128,15 +132,11 @@ const Signup = () => {
                 minWidth={minWidth}
                 placeholder="Enter your password"
                 onChange={hangleChange("confirmPassword")}
-                border={confirmPassword ? "1px solid red" : ""}
+                border={userSignup.empty ? "1px solid red" : ""}
               />
             </div>
           </div>
-          {password || confirmPassword ? (
-            <SmallText small="The field is mandatory" />
-          ) : (
-            ""
-          )}
+          {userSignup.empty ? <SmallText small="The field is mandatory" /> : ""}
           <FormText text="Skills" />
           <Input
             type="text"

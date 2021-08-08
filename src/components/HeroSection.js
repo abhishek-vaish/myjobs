@@ -8,7 +8,7 @@ const HeroSection = () => {
   const maxHeight = "464px";
   return (
     <>
-      <TopBar isLogin={false} maxHeight={maxHeight}>
+      <TopBar isLogin={false} maxHeight={{ maxHeight }}>
         <div className="heroSection">
           <div className="content">
             <div className="heading">
