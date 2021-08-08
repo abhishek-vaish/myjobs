@@ -9,7 +9,7 @@ const UserPostedJob = (props) => {
   const maxHeight = "270px";
   return (
     <>
-      <TopBar isLogin={true} maxHeight={{ maxHeight }}>
+      <TopBar isLogin={true} maxHeight={{ maxHeight }} user={true}>
         <div className="navigation__dashboard">
           <div className="navigation">
             <img src={Home} alt="home" />
