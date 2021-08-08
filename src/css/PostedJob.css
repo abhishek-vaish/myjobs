@@ -1,0 +1,27 @@
+.navigation__dashboard {
+  padding-left: 173px;
+  padding-top: 13px;
+}
+
+.navigation__dashboard .navigation {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 12px;
+}
+
+.navigation__dashboard .navigation img {
+  width: 10px;
+}
+
+.navigation__dashboard .title {
+  color: white;
+  font-size: 22px;
+  margin-top: 24px;
+  padding-bottom: 62px;
+}
+
+.navigation__dashboard .navigation p {
+  margin-right: 2px;
+  margin-left: 2px;
+}

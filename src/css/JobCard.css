@@ -1,0 +1,35 @@
+.card_job {
+  display: grid;
+  grid-template-columns: 260px 260px 260px 260px;
+  grid-gap: 35px;
+  padding-bottom: 100px;
+}
+.jobCard {
+  max-width: 260px;
+  max-height: 162px;
+  border-radius: 5px;
+  background-color: white;
+  padding: 15px;
+}
+
+.jobCard__title {
+  font-size: 17px;
+  text-transform: capitalize;
+  color: #303f60;
+  margin-bottom: 10px;
+}
+
+.jobCard__description {
+  max-width: 229px;
+  max-height: 64px;
+  overflow: hidden;
+  font-size: 14px;
+  color: #303f60;
+}
+
+.jobCard__location {
+  font-size: 14px;
+  text-transform: capitalize;
+  margin-top: 14px;
+  color: #303f60;
+}

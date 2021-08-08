@@ -1,0 +1,16 @@
+.header{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 70px;
+}
+
+.header .header__logo{
+    color: white;
+    font-size: 22px;
+}
+
+.header .header__logo .logo__jobs{
+    color: #43AFFF;
+}

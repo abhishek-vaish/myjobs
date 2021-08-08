@@ -1,0 +1,45 @@
+.user {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6.43px;
+}
+
+.job_link {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  opacity: 0.8;
+  margin-right: 48px;
+}
+
+.userprofile {
+  width: 46px;
+  height: 46px;
+  background-color: #d9efff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.dropdown {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.logout {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.logout_box {
+  width: 112px;
+  height: 46.57px;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 12px;
+  align-items: center;
+}

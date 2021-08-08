@@ -1,0 +1,12 @@
+.email__input {
+  max-width: 238px;
+  min-height: 46px;
+  border-radius: 5px;
+  padding: 0px 15px;
+  margin-bottom: 20px;
+}
+
+.email__input:focus {
+  border: 1px solid #43afff;
+  outline: none;
+}

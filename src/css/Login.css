@@ -1,0 +1,9 @@
+.password{
+    display: flex;
+    justify-content: space-between;
+}
+
+.password a{
+    text-decoration: none;
+    color: #43AFFF;
+}

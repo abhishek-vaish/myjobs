@@ -1,0 +1,36 @@
+.heroSection {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 190px;
+}
+
+.heroSection img {
+  height: 395px;
+  border-radius: 20px;
+  box-shadow: 0px 30px 36px #557da526;
+  margin-top: 61px;
+}
+
+.content {
+  padding: 90px 0px 0px 190px;
+}
+
+.heading {
+  color: white;
+  padding-bottom: 40px;
+}
+.heading img {
+  width: 622px;
+}
+
+.content .action__btn {
+  padding-bottom: 74px;
+}
+
+.heading .heading__welcome {
+  font-size: 60px;
+}
+
+.heading .heading__welcome .heading__jobs {
+  color: #43afff;
+}

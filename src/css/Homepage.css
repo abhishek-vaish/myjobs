@@ -1,0 +1,17 @@
+.why__us {
+  padding: 142px 167px 190px 190px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.why__us .head {
+  margin-bottom: 40px;
+  color: #303f60;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.why__us .card__row {
+  display: flex;
+}

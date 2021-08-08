@@ -1,0 +1,23 @@
+.card {
+  max-width: 341px;
+  min-height: 192px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 24px 0px 30px 20px;
+  margin-right: 30px;
+}
+
+.card .heading {
+  color: #43afff;
+  font-size: 22px;
+  max-width: 172px;
+  padding: 0;
+  font-weight: 500;
+  margin-bottom: 29px;
+}
+
+.card .para {
+  font-size: 14px;
+  max-width: 301px;
+  padding: 0;
+}
